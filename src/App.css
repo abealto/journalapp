@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+/* ------------------ Reset Styles--------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* -------------------- Root Styles------------------- */
+:root {
+  --light-purple: rgb(128, 124, 252);
+  --dark-blue: rgb(84, 88, 113);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* -------------------------- Fonts ------------------------- */
+@font-face {
+  font-family: 'circular-medium';
+  src: url('./fonts/CircularStd-Medium.woff') format('woff');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'circular-book';
+  src: url('./fonts/CircularStd-Book.woff') format('woff');
+}
+
+body {
+  font-family: circular-book;
+}
+
+/* ------------------- create and view section -------------------- */
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: var(--light-purple);
+  margin-top: 50px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.header > div {
+  margin: 20px;
+}
+
+.forms > label {
+  font-size: 17px;
+  margin: 3% 0;
+}
+
+.forms > button {
+  margin: 8% 0;
+  background-color: var(--dark-blue);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.one-journal > div > .btn {
+  background-color: var(--dark-blue);
+  color: white;
+  margin: 10px 10px 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.one-journal > h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.forms > textarea,
+.forms > input {
+  border: none;
+  border-radius: 2px;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+
+/* ------------------------------- update Journals ----------------------------- */
+
+.update-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--light-purple);
+  margin: auto;
+  margin-top: 50px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.update-header h3 {
+  margin: 20px 0 20px 0;
+  font-size: 35px;
+}
+
+/* -------------------- View one styling --------------------- */
+
+.view-journal {
+  background-color: var(--light-purple);
+  width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.view-journal h3 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+  width: 30%;
+  padding-bottom: 7px;
+}
+
+.view-journal p {
+  font-size: 25px;
+}
+
+.view-journal > .btn {
+  background-color: var(--dark-blue);
+  color: white;
+  margin: 10px 10px 10px 0;
 }

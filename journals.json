@@ -1,0 +1,54 @@
+{
+  "Journals": [
+    {
+      "title": "Hello World",
+      "body": "hey there this is my first Journal",
+      "id": 1
+    },
+    {
+      "title": "Good Day",
+      "body": "I had lots of fun today",
+      "id": 2
+    },
+    {
+      "title": "Wow, what a day",
+      "body": "I learend so much JavaScript today!",
+      "id": 3
+    },
+    {
+      "title": "I really like JavaScript",
+      "body": "I worked on arrays and hash tables",
+      "id": 4
+    },
+    {
+      "title": "ABE!",
+      "body": "5th journal entry",
+      "id": 5
+    },
+    {
+      "title": "Hello",
+      "body": "another journal",
+      "id": 6
+    },
+    {
+      "title": "Hello2",
+      "body": "another journal",
+      "id": 7
+    },
+    {
+      "title": "hi",
+      "body": "abe",
+      "id": 8
+    },
+    {
+      "title": "",
+      "body": "",
+      "id": 9
+    },
+    {
+      "title": "",
+      "body": "",
+      "id": 10
+    }
+  ]
+}
